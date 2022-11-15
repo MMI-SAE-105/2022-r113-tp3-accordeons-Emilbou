@@ -12,10 +12,10 @@
 <body>
   <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
   <div class="accordeon" x-data="{
-    idOpen:1,
+    isOpen:1,
   }">
     <section>
-      <button @click="isOpen = 1">>bouton 1</button>
+      <button @click="isOpen = 1">bouton 1</button>
       <p x-show="isOpen === 1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis est tempore culpa.
         Veritatis, quasi iusto sit tempore itaque, impedit laudantium animi, commodi laborum expedita consequuntur nisi!
         Ex rerum esse laboriosam.</p>
@@ -28,7 +28,7 @@
         asperiores doloribus!</p>
     </section>
     <section>
-      <button @click="isOpen = 3">>bouton 3</button>
+      <button @click="isOpen = 3">bouton 3</button>
       <p x-show="isOpen === 3">Impedit aliquid itaque minus modi debitis, sit facilis, atque ipsa amet explicabo
         veritatis a nihil nulla,
         fugit ut voluptatum laborum esse. Sit sint quisquam ullam ex voluptas totam aliquam accusantium!</p>
