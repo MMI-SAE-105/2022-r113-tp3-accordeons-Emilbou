@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accordéon horizontal</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,10 +23,10 @@
       <section>
 
         <li @click="isOpen = 1">
-          <figure x-show="isOpen === 1">
+          <figure x-show="isOpen === 1" x-transition.duration.500ms>
             <img src="assets/testttt.jpg" alt="" width=" 102">
             <figcaption>
-              <h3>Lorem, ipsum dolor.</h3>
+              <h3>Page 1.</h3>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </figcaption>
           </figure>
@@ -35,10 +37,10 @@
       <section>
 
         <li @click="isOpen = 2">
-          <figure x-show="isOpen === 2">
+          <figure x-show="isOpen === 2" x-transition.duration.500ms>
             <img src="assets/testttt.jpg" alt="" width=" 102">
             <figcaption>
-              <h3>Lorem, ipsum dolor.</h3>
+              <h3>Page 2.</h3>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </figcaption>
           </figure>
@@ -49,10 +51,10 @@
       <section>
 
         <li @click="isOpen = 3">
-          <figure x-show="isOpen === 3">
+          <figure x-show="isOpen === 3" x-transition.duration.500ms>
             <img src="assets/testttt.jpg" alt="" width=" 102">
             <figcaption>
-              <h3>Lorem, ipsum dolor.</h3>
+              <h3>Page 3.</h3>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </figcaption>
           </figure>
