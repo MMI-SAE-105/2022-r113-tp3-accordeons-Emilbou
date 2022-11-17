@@ -12,35 +12,59 @@
 <body>
   <h1>Accordéon horizontal</h1>
   <button><a href="index.html">Accueil</a></button>
-  <ul id="accordeon">
-    <li>
-      <figure>
-        <img src="assets/Capture d’écran 2022-11-17 083455.jpg" alt="" width="102">
-        <figcaption>
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure>
-        <img src="assets/Capture d’écran 2022-11-17 083455.jpg" alt="" width="102">
-        <figcaption>
-          <h3>Rem, provident assumenda.</h3>
-          <p>Soluta dolorum tempora illum ullam quos!</p>
-        </figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure>
-        <img src="assets/Capture d’écran 2022-11-17 083455.jpg" alt="" width="102">
-        <figcaption>
-          <h3>Distinctio, laudantium quasi.</h3>
-          <p>Laudantium consequuntur ipsam placeat quidem a.</p>
-        </figcaption>
-      </figure>
-    </li>
-  </ul>
+  <div class="accordeon" x-data="{
+    isOpen:1,
+  }">
+
+    <ul id="accordeon">
+
+      <section>
+
+        <li @click="isOpen = 1">
+          <figure x-show="isOpen === 1">
+            <img src="assets/testttt.jpg" alt="" width=" 102">
+            <figcaption>
+              <h3>Lorem, ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </figcaption>
+          </figure>
+        </li>
+
+
+      </section>
+      <section>
+
+        <li @click="isOpen = 2">
+          <figure x-show="isOpen === 2">
+            <img src="assets/testttt.jpg" alt="" width=" 102">
+            <figcaption>
+              <h3>Lorem, ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </figcaption>
+          </figure>
+        </li>
+
+
+      </section>
+      <section>
+
+        <li @click="isOpen = 3">
+          <figure x-show="isOpen === 3">
+            <img src="assets/testttt.jpg" alt="" width=" 102">
+            <figcaption>
+              <h3>Lorem, ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </figcaption>
+          </figure>
+        </li>
+
+
+      </section>
+
+
+
+    </ul>
+  </div>
 </body>
 
 </html>
