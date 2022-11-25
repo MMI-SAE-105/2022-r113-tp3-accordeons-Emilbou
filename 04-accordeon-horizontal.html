@@ -20,48 +20,44 @@
 
     <ul id="accordeon">
 
-      <section>
 
-        <li @click="isOpen = 1">
-          <figure x-show="isOpen === 1" x-transition.duration.500ms>
-            <img src="assets/testttt.jpg" alt="" width=" 102">
-            <figcaption>
-              <h3>Page 1.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </figcaption>
-          </figure>
-        </li>
-
-
-      </section>
-      <section>
-
-        <li @click="isOpen = 2">
-          <figure x-show="isOpen === 2" x-transition.duration.500ms>
-            <img src="assets/testttt.jpg" alt="" width=" 102">
-            <figcaption>
-              <h3>Page 2.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </figcaption>
-          </figure>
-        </li>
+      <li @click="id === 1">
+        <figure x-transition.duration.500ms>
+          <img src="assets/testttt.jpg" alt="" width=" 102">
+          <figcaption>
+            <h3>Page 1.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </figcaption>
+        </figure>
+      </li>
 
 
-      </section>
-      <section>
-
-        <li @click="isOpen = 3">
-          <figure x-show="isOpen === 3" x-transition.duration.500ms>
-            <img src="assets/testttt.jpg" alt="" width=" 102">
-            <figcaption>
-              <h3>Page 3.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </figcaption>
-          </figure>
-        </li>
 
 
-      </section>
+      <li @click="isOpen = 2">
+        <figure x-transition.duration.500ms>
+          <img src="assets/testttt.jpg" alt="" width=" 102">
+          <figcaption>
+            <h3>Page 2.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </figcaption>
+        </figure>
+      </li>
+
+
+
+      <li @click="isOpen = 3">
+        <figure x-transition.duration.500ms>
+          <img src="assets/testttt.jpg" alt="" width=" 102">
+          <figcaption>
+            <h3>Page 3.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </figcaption>
+        </figure>
+      </li>
+
+
+
 
 
 

@@ -13,7 +13,7 @@ img {
 
 #accordeon li {
     /* largeur de chaque élément replié 107px */
-    height: 107px;
+    width: 107px;
     /* pour cacher le contenu dépassant de l'élément */
     overflow: hidden;
     /* pour l'animation, transition sur width */
@@ -33,7 +33,7 @@ img {
 
 #accordeon li.actif {
     /* largeur de l'élément déplié 317px */
-    height: 317px;
+    width: 317px;
 }
 
 #accordeon li figure {
@@ -42,6 +42,7 @@ img {
     /* pour que les éléments soient alignés horizontalement */
     display: flex;
     /* largeur de l'élément intrérieur de 317px (= déplié) */
+    width: 317px;
 }
 
 #accordeon li figure figcaption {
