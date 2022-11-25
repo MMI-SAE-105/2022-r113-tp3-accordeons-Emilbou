@@ -15,14 +15,14 @@
   <h1>Accordéon horizontal</h1>
   <button><a href="index.html">Accueil</a></button>
   <div class="accordeon" x-data="{
-    isOpen:1,
+    isOpen: 1,
   }">
 
     <ul id="accordeon">
 
 
-      <li @click="id === 1">
-        <figure x-transition.duration.500ms>
+      <li @click="id = 1">
+        <figure :class="{actif:isOpen === 1,}" x-transition.duration.500ms>
           <img src="assets/testttt.jpg" alt="" width=" 102">
           <figcaption>
             <h3>Page 1.</h3>
@@ -35,7 +35,7 @@
 
 
       <li @click="isOpen = 2">
-        <figure x-transition.duration.500ms>
+        <figure :class="{actif:isOpen === 2,}" x-transition.duration.500ms>
           <img src="assets/testttt.jpg" alt="" width=" 102">
           <figcaption>
             <h3>Page 2.</h3>
@@ -47,7 +47,7 @@
 
 
       <li @click="isOpen = 3">
-        <figure x-transition.duration.500ms>
+        <figure :class="{actif:isOpen === 3,}" x-transition.duration.500ms>
           <img src="assets/testttt.jpg" alt="" width=" 102">
           <figcaption>
             <h3>Page 3.</h3>
